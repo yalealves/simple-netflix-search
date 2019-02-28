@@ -1,0 +1,63 @@
+<!DOCTYPE html:
+<html>
+<head>
+	<title>Simple netflix search </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style>
+		footer{
+			text-align: center;
+		}
+		.container{
+			margin-top: 20px;
+		}
+		h3 {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="header clearfix"></div>
+	<h3>Simple netflix search</h3>
+	<div class="jumbotron">
+		<div class="col-lg-12">
+			<form  id="form1">
+			  <div class="row">
+			    <div class="col">
+			      <input type="text" name="" class="form-control" id="search" placeholder="Search movies/series">
+			    </div>
+			    <div class="col">
+					    <select id="country" class="form-control">
+								<option>en_US</option>
+								<option>pt_BR</option>
+					      <option>en_CA</option>
+					      <option>es_MX</option>
+					      <option>es_ES</option>
+					    </select>
+			    </div>
+					<div class="col">
+						<span class="input-grou-btn">
+							<button class="btn btn-primary">Search</button>
+						</span>
+					</div>
+			  </div>
+
+			</form>
+		</div>
+		<div class="container">
+			<div  id="loader" style="display:none;"><h5>Loading...</h5></div>
+			<div  id="movies"></div>
+		</div>
+	</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+	<footer>
+		<p>Powered by <a href="https://github.com/yalealves" target="_blank">Yale Alves</a>.</p>
+	</footer>
+</body>
+</html>
