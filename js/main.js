@@ -30,6 +30,7 @@ function findTitles(title, country){
 		for (var j= 0; j < responseOffers.length; j++){
 			if (responseOffers[j].provider_id == 8){
 				var netflix_link = responseOffers[j].urls.standard_web;
+				break;
 			}
 		}
 
